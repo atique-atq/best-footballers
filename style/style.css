@@ -1,0 +1,341 @@
+/*-----------
+      Fonts 
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/*---------------------------
+  common-styles or utilites
+ --------------------------*/
+body{
+    margin: -1px;
+    font-family: 'Poppins', sans-serif;
+}
+/*------------
+   header style
+--------------*/
+.header-container{
+    margin: 0px;
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.navbar{
+    display: flex;
+    column-gap: 350px;
+    /* justify-content: space-between; */
+    position: absolute;
+    width: 1161px;
+    margin-left: 156px;
+    margin-top: 42px;
+    margin-right: 121px;    
+}
+.nav-menu{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    left: 0px;
+    height: 24px;
+}
+.nav-menu ul{
+    display: flex;
+    padding-left: 0px;
+    height: 24px;
+}
+.nav-menu ul li{
+    list-style: none;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 36px;
+    margin-left: 0px;
+    
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #E02C6D;
+    height: 44px;
+    color: white;
+
+}
+.login a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Text and Banner Style */
+.header-text-container{
+    display: flex;
+    padding-top: 135px;
+    margin-left: 156px;
+    margin-right: 140px;
+}
+.header-text h1{
+    margin: 0px;
+    font-size: 64px;
+    color: white;
+}
+.watch-live{
+    background-color: #E02C6D;
+    height: 30px;
+    width: 110px;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+.watch-live a{
+    text-decoration: none;
+    color: white;
+}
+.header-picture{
+    width: 100%;
+    margin-left: 102px;
+}
+.football {
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: white;
+    position: absolute;
+    left: 42px;
+    transition: transform 2s ease-out;
+}
+
+.header-text-container:hover .football{
+    display: block;
+    transform: translate(500px, -200px);
+}
+
+/* .header-text-container:hover .football{
+    display: block;
+    transform: translate(500px, -200px);
+} */
+
+.box-purple{
+    border: 1px solid white;
+     height: 434px;
+     width: 360px; 
+     position: absolute;
+     background-color: #2D25A0;
+     border-top-right-radius: 75px; 
+     margin-left: 90px;
+     margin-top: 10px;
+}
+.box-cyan{
+    margin-top: 20px;
+    margin-left: 70px;
+    height: 438px;
+    width: 350px; 
+    position: absolute;
+    background-color: rgb(20, 162, 206);
+    border-top-right-radius: 75px;
+    z-index: 10;
+}
+.header-picture img{
+    position: absolute;
+    z-index: 11;
+    margin-right: 20px;
+}
+
+/*----------------*\
+    Players Style
+\*-----------------*/
+body{
+    background-color: rgba(230, 232, 233, 0.952); 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.container{
+    width: 1050px;
+    margin-top: 70px;
+    margin-left: 180px;
+    margin-right: 210px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 45px;
+    grid-column-gap: 30px;
+}
+.player{
+    /* height: 456px; */
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.player img{
+    width: 100%;
+}
+.player h1{
+    margin-bottom: -1px;
+    /* padding-left: 5px; */
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+}
+.player p{
+    margin: 0px;
+    /* padding-left: 5px; */
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Extra Section */
+.extra-sections{
+    width: 100%;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    border-radius: 15px;
+}
+.extra-section{
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.container h1{
+    margin: 0px;
+    font-size: 24px;
+    color: rgb(41, 40, 40);
+}
+.featured-videos{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    background-color: rgb(137, 171, 177);
+    border-radius: 15px;
+}
+.video{
+    padding: 15px;
+}
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;  
+    grid-row-gap: 15px;
+}
+.photo-frame{
+    padding: 15px;
+    position: relative;
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-detail{
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 0px;
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(137, 171, 177, 0.796);
+}
+.photo-frame:hover .photo{
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+/* Footer Style */
+.footer{
+    background-color: rgba(230, 232, 233, 0.952);
+    text-align: center;
+}
+.footer-div{
+    text-align: center;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon i{
+    padding: 5px;
+}
+.footer-div img{
+    width: 242px;
+    height: 100px;
+}
+
+/*-----------------------*\
+     Media Query    
+/*------------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    .header-text-container{
+        margin: 0px;
+        width: 100%;
+        height: 700px;
+        padding: 0px;
+        flex-direction: column;
+
+    }
+    .header-picture{
+        margin-left: 0px;
+        width: 70%;
+    }
+
+    .box-purple,.box-cyan, 
+    .header-picture img{
+        /* width: 100%; */
+        height: 40%;
+    }
+    .main{
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+        align-items: center;
+    }
+    .featured-videos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players, .extra-sections{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 40%;
+        align-items: center;
+    }
+
+}
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width: 992px){
+    .main{
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+        align-items: center;
+    }
+    .featured-videos{
+        padding: 20%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players, .extra-sections{
+        padding: 20%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        width: 100%;
+    }
+}
