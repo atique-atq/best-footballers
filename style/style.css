@@ -51,7 +51,7 @@ body{
 
 }
 
-.header-text-container:hover .header-picture{
+.header-container:hover .header-picture{
     transform: scale(1.2) skewX(-10deg);
 }
 
@@ -248,7 +248,7 @@ main{
         align-items: center;
     }
     
-    .header-text-container:hover .header-picture{
+    .header-container:hover .header-picture{
         transform: none;
     }
     .container{
